@@ -116,6 +116,7 @@ document.querySelector('input').addEventListener('keyup', function () {
     const element = document.querySelector('input')
     const value = element.value
     if (value.length == 0) {
+        document.getElementById('row').textContent = ''
         loadMeals()
         document.getElementById('not-found').style.display= 'none'
     }

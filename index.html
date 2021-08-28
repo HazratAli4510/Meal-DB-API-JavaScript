@@ -12,6 +12,11 @@
         #row .col {
             cursor: pointer;
         }
+        @media(min-width:1050px){
+            form{
+            width: 450px;
+        }
+        }
     </style>
 </head>
 
@@ -19,7 +24,7 @@
     <div class="container">
         <h1 class="text-center mt-5 text-uppercase">Search Your Meal</h1>
         <div class="searchSection">
-            <form action="" class="d-flex rounded-0 w-25 mx-auto">
+            <form action="" class="d-flex rounded-0 mx-auto">
                 <input type="text" class="form-control">
                 <button id="search-btn" type="submit" onclick="loadSearch()"
                     class="rounded-0 btn btn-primary">Search</button>
@@ -33,7 +38,7 @@
                 </div>
             </div>
             <h1 id="not-found" class="text-center">Product Not Found!!</h1>
-            <div id="row" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            <div id="row" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
             </div>
         </div>
     </div>
