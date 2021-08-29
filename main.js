@@ -117,7 +117,9 @@ document.querySelector('input').addEventListener('keyup', function () {
     const value = element.value
     if (value.length == 0) {
         document.getElementById('row').textContent = ''
+        document.getElementById('spinner').style.display = 'block'
         loadMeals()
+        document.getElementById('spinner').style.display = 'none'
         document.getElementById('not-found').style.display= 'none'
     }
 })
